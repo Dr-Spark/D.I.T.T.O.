@@ -1,2 +1,2 @@
-# D.I.T.T.O
+# D.I.T.T.O.
 Game
