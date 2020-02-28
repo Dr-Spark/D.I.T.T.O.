@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class TitleToScene : MonoBehaviour
 {
-	public GameObject other;
+	//public GameObject other;
 	public string nextScene;
 	
     void Start()
@@ -16,7 +16,7 @@ public class TitleToScene : MonoBehaviour
     
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Return) && other.transform.position.y > -1.9){
+        if(Input.GetKeyDown(KeyCode.Return) && transform.position.y > -1.9){
 			SceneManager.LoadScene(nextScene);
 		}
     }

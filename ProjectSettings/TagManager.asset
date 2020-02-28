@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Object
   layers:
   - Default
   - TransparentFX
@@ -40,4 +41,19 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Floor
+    uniqueID: 350760277
+    locked: 0
+  - name: Enemies
+    uniqueID: 497800141
+    locked: 0
+  - name: Player
+    uniqueID: 3962069227
+    locked: 0
+  - name: Temp Sword
+    uniqueID: 4005353737
+    locked: 0
+  - name: Items
+    uniqueID: 1849147965
     locked: 0
