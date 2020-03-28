@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FutureScene.unity
     guid: a0307b7ad441e4643a73e497eed444fc
+  - enabled: 1
+    path: Assets/Scenes/Dungeon.unity
+    guid: fe0bed1cdef033d48a4eca9094e447cb
+  - enabled: 1
+    path: Assets/Scenes/ForestScene.unity
+    guid: 84a4b03c2fcb8a54e9d5d34e58213379
   m_configObjects: {}

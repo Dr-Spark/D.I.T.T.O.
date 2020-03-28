@@ -244,7 +244,7 @@ PrefabInstance:
     - target: {fileID: 7718261277060628142, guid: 3fdf02ddefa4021449a14716ba602a4d,
         type: 3}
       propertyPath: m_Name
-      value: Past Outside
+      value: Forest
       objectReference: {fileID: 0}
     - target: {fileID: 3183499758217725488, guid: 3fdf02ddefa4021449a14716ba602a4d,
         type: 3}
@@ -329,7 +329,7 @@ PrefabInstance:
     - target: {fileID: 5283620147340976646, guid: 3fdf02ddefa4021449a14716ba602a4d,
         type: 3}
       propertyPath: nextScene
-      value: SampleScene
+      value: ForestScene
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3fdf02ddefa4021449a14716ba602a4d, type: 3}
@@ -5492,16 +5492,6 @@ PrefabInstance:
         type: 3}
       propertyPath: faceDifX
       value: -5.98
-      objectReference: {fileID: 0}
-    - target: {fileID: 3819957134002492458, guid: 73ce0bc1f2d40ee459bced2a8a090852,
-        type: 3}
-      propertyPath: m_UseAutoMass
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3819957134002492458, guid: 73ce0bc1f2d40ee459bced2a8a090852,
-        type: 3}
-      propertyPath: m_Mass
-      value: 0.2803555
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 73ce0bc1f2d40ee459bced2a8a090852, type: 3}

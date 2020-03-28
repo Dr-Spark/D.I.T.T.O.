@@ -116,6 +116,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
+  speedUp: 0
   moveLeft: 0
   moveUp: 0
   faceDifX: -6
