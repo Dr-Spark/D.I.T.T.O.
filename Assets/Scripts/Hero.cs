@@ -2,14 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Hero : MonoBehaviour
-{
-
+public class Hero : MonoBehaviour { 
     public enum eMode { idle, move, attack }
     public eMode mode;
 
+    [Header("Set in Inspector")]
     public float speed = 3;
+    public float attackDuration = 0.25f; // Number of seconds to attack
+    public float attackDelay = 0.5f;     // Delay between attacks
+    public int maxHealth = 10;
 
+    //[Header("Set Dynamically")]
     private float v;
     private float h;
 
@@ -21,14 +24,28 @@ public class Hero : MonoBehaviour
     //up = 2
     //right = 3
 
-    public float attackDuration = 0.25f; // Number of seconds to attack
-    public float attackDelay = 0.5f;     // Delay between attacks
+    
+    
+
+    [SerializeField]
+    private int _health;
+
+    public int health
+    {
+        get { return _health; }
+        set { _health = value; }
+    }
+    
     private float timeAtkDone = 0;
     private float timeAtkNext = 0;
 
     void Start()
     {
         player = gameObject.GetComponent<Animator>();
+    }
+    void Awake()
+    {
+        health = maxHealth;    
     }
 
     void Update()
