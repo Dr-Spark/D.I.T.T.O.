@@ -45,6 +45,9 @@ TagManager:
   - name: Floor
     uniqueID: 350760277
     locked: 0
+  - name: Steps
+    uniqueID: 263460001
+    locked: 0
   - name: Enemies
     uniqueID: 497800141
     locked: 0

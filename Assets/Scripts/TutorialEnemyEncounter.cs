@@ -5,9 +5,11 @@ using UnityEngine;
 public class TutorialEnemyEncounter : MonoBehaviour
 {
     public TextManager dialouge;
+
+    Animator player;
     void Start()
     {
-        
+        player = gameObject.GetComponent<Animator>();
     }
 
     // Update is called once per frame
