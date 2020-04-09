@@ -19,8 +19,8 @@ public class GuiPanel : MonoBehaviour
     void Start()
     {
         // Key Count
-              Transform trans = transform.Find("Key Count");
-              keyCountText = trans.GetComponent<Text>();
+        Transform trans = transform.Find("Key Count");
+        keyCountText = trans.GetComponent<Text>();
 
         //Health Icons
         Transform healthPanel = transform.Find("Health Panel");
@@ -38,12 +38,11 @@ public class GuiPanel : MonoBehaviour
     void Update()
     {
         // Show Keys
-        //        keyCountText.text = Hero.numKeys.ToString();
+       keyCountText.text = Player.numKeys.ToString();
 
         //Show health
-        //dont't have Hero.health so I changed it into a number for now
-        //Kelly
-        int health = 3;
+       // Not working yet
+         int health = Player.health;
         for (int i = 0; i < healthImages.Count; i++)
         {
             if (health > 1)

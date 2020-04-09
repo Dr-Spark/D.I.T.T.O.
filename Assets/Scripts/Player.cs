@@ -2,18 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player: MonoBehaviour
+public class Player: MonoBehaviour, IKeyMaster
 {
     public enum eMode { idle, move, attack }
-    public eMode mode;
-
     [Header("Set in Inspector")]
     public float speed;
     public float attackDuration = 0.25f; // Number of seconds to attack
     public float attackDelay = 0.5f;     // Delay between attacks
     public int maxHealth = 10;
 
-    // [Header("Set Dynamically")]
+    [Header("Set Dynamically")]
+    /*public int dirHeld = -1; // Direction of the held movement key
+      public int facing = 1; // Direction Player is facing
+    */
+    public eMode mode = eMode.idle;
+    public int numKeys = 0;
+
     public float v;
     public float h;
 
@@ -191,5 +195,11 @@ public class Player: MonoBehaviour
         Vector3 theScale = transform.localScale;
         theScale.x *= -1;
         transform.localScale = theScale;
+    }
+    // Implementation of IKeyMaster
+    public int keyCount
+    {
+        get { return numKeys; }
+        set { numKeys = value; }
     }
 }
