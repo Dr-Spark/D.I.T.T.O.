@@ -15,7 +15,7 @@ public class TextManager : MonoBehaviour
     public int currentLine;
     public int endLine;
 
-    public Hero player;
+    public Player player;
 
     public string nextScene;
 
@@ -24,7 +24,7 @@ public class TextManager : MonoBehaviour
 
     void Start()
     {
-        player = FindObjectOfType<Hero>();
+        player = FindObjectOfType<Player>();
         if (textFile != null)
         {
             textLines = (textFile.text.Split('\n'));

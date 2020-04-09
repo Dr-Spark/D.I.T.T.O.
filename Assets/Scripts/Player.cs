@@ -7,22 +7,35 @@ public class Player: MonoBehaviour
     public enum eMode { idle, move, attack }
     public eMode mode;
 
+    [Header("Set in Inspector")]
     public float speed;
+    public float attackDuration = 0.25f; // Number of seconds to attack
+    public float attackDelay = 0.5f;     // Delay between attacks
+    public int maxHealth = 10;
 
+    // [Header("Set Dynamically")]
     public float v;
     public float h;
 
     Animator player;
 
     private bool faceLeft = false;
-    private float facing = 0;
+    public float facing;
     //2 = up (showing the back)
     //3 = left 
     //0  = down
     //1 = right
+    
+    
+    [SerializeField]
+    private int _health;
 
-    public float attackDuration = 0.25f; // Number of seconds to attack
-    public float attackDelay = 0.5f;     // Delay between attacks
+    public int health
+    {
+        get { return _health; }
+        set { _health = value; }
+    }
+
     private float timeAtkDone = 0;
     private float timeAtkNext = 0;
 
@@ -31,7 +44,10 @@ public class Player: MonoBehaviour
         player = gameObject.GetComponent<Animator>();
 
     }
-
+    void Awake()
+    {
+        health = maxHealth;
+    }
     void Update()
     {
         v = Input.GetAxisRaw("Vertical");

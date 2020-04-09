@@ -23,4 +23,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FirstEncounterWthEnemy.unity
     guid: 45592f3f202f7bc4e93a0f3f01b2ebf7
+  - enabled: 1
+    path: Assets/Scenes/HallwayWithNoEnemiesYet.unity
+    guid: c7715b9f6b93b734aab8b9ff4a00601d
+  - enabled: 1
+    path: Assets/Scenes/Title Screen.unity
+    guid: ea9c2962604dfb34fadd7ca23242bb6f
   m_configObjects: {}

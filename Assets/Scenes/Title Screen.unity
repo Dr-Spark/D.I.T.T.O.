@@ -310,7 +310,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09fa1bf2fd337644a90e64fb47753d07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextScene: FutureScene
+  nextScene: HallwayWithNoEnemiesYet
 --- !u!212 &483508584
 SpriteRenderer:
   m_ObjectHideFlags: 0
