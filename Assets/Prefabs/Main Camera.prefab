@@ -97,3 +97,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  maxPos: {x: 2.75, y: 0}
+  minPos: {x: -28.75, y: 0}

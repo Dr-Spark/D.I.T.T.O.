@@ -16,6 +16,6 @@ public class Repeat : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-		time.Play(animationName);	
+            time.Play(animationName);
     }
 }

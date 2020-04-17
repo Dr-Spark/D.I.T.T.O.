@@ -3,7 +3,11 @@ guid: 7e0eb733541e0524eb1286e4f31e12be
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - Hero: {fileID: 6660722284086905404, guid: 29021c68e3d897e44a277d5123fcd7b5, type: 3}
+  - healthEmpty: {fileID: 21300000, guid: 471d6d7addd844f4f96a8e94b2b6d67d, type: 3}
+  - healthHalf: {fileID: 21300002, guid: 471d6d7addd844f4f96a8e94b2b6d67d, type: 3}
+  - healthFull: {fileID: 21300004, guid: 471d6d7addd844f4f96a8e94b2b6d67d, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

@@ -17,6 +17,7 @@ public class TextManager : MonoBehaviour
 
     public Player player;
 
+    public bool wantNextScene;
     public string nextScene;
 
     //other classes can trigger this on so that a before textbox action can occur
@@ -57,8 +58,12 @@ public class TextManager : MonoBehaviour
 
             if (currentLine > endLine)
             {
-                //textBox.SetActive(false);
-                SceneManager.LoadScene(nextScene);
+                textBox.SetActive(false);
+                
+                if(wantNextScene == true)
+                {
+                    SceneManager.LoadScene(nextScene);
+                }  
             }
         }
 

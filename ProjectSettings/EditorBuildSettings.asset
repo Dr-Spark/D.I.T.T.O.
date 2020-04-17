@@ -21,7 +21,7 @@ EditorBuildSettings:
     path: Assets/Scenes/ForestScene.unity
     guid: 84a4b03c2fcb8a54e9d5d34e58213379
   - enabled: 1
-    path: Assets/Scenes/FirstEncounterWthEnemy.unity
+    path: Assets/Scenes/FirstEncounterWithEnemy.unity
     guid: 45592f3f202f7bc4e93a0f3f01b2ebf7
   - enabled: 1
     path: Assets/Scenes/HallwayWithNoEnemiesYet.unity

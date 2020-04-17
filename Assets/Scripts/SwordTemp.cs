@@ -9,7 +9,7 @@ public class SwordTemp : MonoBehaviour
 
     private Player hero;
 
-    private int facing;
+    public int facing;
     //2 = up (showing the back)
     //3 = left 
     //0  = down
@@ -17,6 +17,7 @@ public class SwordTemp : MonoBehaviour
 
     void Start()
     {
+
         sword = transform.Find(typeSword).gameObject;
         hero = transform.parent.GetComponent<Player>();
 
@@ -26,7 +27,7 @@ public class SwordTemp : MonoBehaviour
 
     void Update()
     {
-
+        //transform.localScale = (hero.transform.localScale)/3;
         if ((hero.h > 0 || hero.h < 0) && (hero.v < 0 || hero.v > 0))
         {
             if (hero.v > 0)
@@ -65,9 +66,8 @@ public class SwordTemp : MonoBehaviour
         transform.rotation = Quaternion.Euler(0, 0, 90 * facing);
 
         //transform.position = new Vector3(0, 0, 0);
-
+       
         sword.SetActive(hero.mode == Player.eMode.attack && facing != 2);
-
         //1 = right = (0.2, -0.15)  (0.067, -0.05)
         //3 = left = (0.2, 0.15)  (0.1167, -0.05)
         //0 = down = (0, -0.35)  (0, -0.1167)
@@ -75,19 +75,19 @@ public class SwordTemp : MonoBehaviour
 
         if (facing == 1)
         {
-            transform.position = new Vector3(0.3f, -0.18f, 0) + hero.transform.position;
+            transform.position = Vector3.Scale(new Vector3(0.3f, -0.18f, 0), (hero.transform.localScale) / 3)+hero.transform.position;
         }
         else if (facing == 2)
         {
-            transform.position = new Vector3(0, 0.06f, 0) + hero.transform.position;
+            transform.position = Vector3.Scale(new Vector3(0, 0.06f, 0), (hero.transform.localScale) / 3) + hero.transform.position;
         }
         else if (facing == 3)
         {
-            transform.position = new Vector3(-0.3f, -0.13f - 0.05f, 0) + hero.transform.position;
+            transform.position = Vector3.Scale(new Vector3(0.3f, -0.18f, 0), (hero.transform.localScale) / 3) + hero.transform.position;
         }
         else if (facing == 0)
         {
-            transform.position = new Vector3(0, -0.42f, 0) + hero.transform.position;
+            transform.position = Vector3.Scale(new Vector3(0, -0.42f, 0), (hero.transform.localScale) / 3) + hero.transform.position;
         }
 
     }
