@@ -29,4 +29,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Title Screen.unity
     guid: ea9c2962604dfb34fadd7ca23242bb6f
+  - enabled: 1
+    path: Assets/Scenes/DecoyTimeRoom.unity
+    guid: 2225174a5d9f2ea43986f61ca49ca52f
+  - enabled: 1
+    path: Assets/Scenes/TimeTravelRoom.unity
+    guid: 088c94c5933c55149a4ab1bf487d1b1c
   m_configObjects: {}

@@ -17,7 +17,7 @@ public class GuiPanel : MonoBehaviour
     void Start()
     {
         // Key Count
-        Transform trans = transform.Find("Key Count");
+        Transform trans = transform.Find("Piece Count");
         keyCountText = trans.GetComponent<Text>();
 
         //Health Icons
