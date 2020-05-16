@@ -933,26 +933,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Main Camera
       objectReference: {fileID: 0}
-    - target: {fileID: 7660581438349238167, guid: fbacfe598b9246c46992bf45f272875c,
-        type: 3}
-      propertyPath: m_BackGroundColor.r
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7660581438349238167, guid: fbacfe598b9246c46992bf45f272875c,
-        type: 3}
-      propertyPath: m_BackGroundColor.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7660581438349238167, guid: fbacfe598b9246c46992bf45f272875c,
-        type: 3}
-      propertyPath: m_BackGroundColor.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7660581438349238167, guid: fbacfe598b9246c46992bf45f272875c,
-        type: 3}
-      propertyPath: orthographic size
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 7660581438349238166, guid: fbacfe598b9246c46992bf45f272875c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1017,6 +997,36 @@ PrefabInstance:
         type: 3}
       propertyPath: smoothing
       value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7660581438349238165, guid: fbacfe598b9246c46992bf45f272875c,
+        type: 3}
+      propertyPath: maxPos.x
+      value: 2.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 7660581438349238165, guid: fbacfe598b9246c46992bf45f272875c,
+        type: 3}
+      propertyPath: minPos.x
+      value: -28.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 7660581438349238167, guid: fbacfe598b9246c46992bf45f272875c,
+        type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7660581438349238167, guid: fbacfe598b9246c46992bf45f272875c,
+        type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7660581438349238167, guid: fbacfe598b9246c46992bf45f272875c,
+        type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7660581438349238167, guid: fbacfe598b9246c46992bf45f272875c,
+        type: 3}
+      propertyPath: orthographic size
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbacfe598b9246c46992bf45f272875c, type: 3}
@@ -4066,8 +4076,8 @@ Tilemap:
       m_ColliderType: 1
   - first: {x: -25, y: 2, z: 0}
     second:
-      m_TileIndex: 14
-      m_TileSpriteIndex: 14
+      m_TileIndex: 12
+      m_TileSpriteIndex: 12
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_ObjectToInstantiate: {fileID: 0}
@@ -4471,8 +4481,8 @@ Tilemap:
       m_ColliderType: 1
   - first: {x: -24, y: 3, z: 0}
     second:
-      m_TileIndex: 14
-      m_TileSpriteIndex: 14
+      m_TileIndex: 12
+      m_TileSpriteIndex: 12
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_ObjectToInstantiate: {fileID: 0}
@@ -4876,8 +4886,8 @@ Tilemap:
       m_ColliderType: 1
   - first: {x: -23, y: 4, z: 0}
     second:
-      m_TileIndex: 14
-      m_TileSpriteIndex: 14
+      m_TileIndex: 12
+      m_TileSpriteIndex: 12
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_ObjectToInstantiate: {fileID: 0}
@@ -6448,11 +6458,11 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 4d87a0c6965066046b46639cd3189043, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 5487076d3904d0240ba6424c0f01be2b, type: 2}
-  - m_RefCount: 105
+  - m_RefCount: 108
     m_Data: {fileID: 11400000, guid: f960ad43e594aa0438ba02e5cdf6628a, type: 2}
   - m_RefCount: 103
     m_Data: {fileID: 11400000, guid: d93ede7266fdac147be4043e9a771b5c, type: 2}
-  - m_RefCount: 6
+  - m_RefCount: 3
     m_Data: {fileID: 11400000, guid: cccba82da9722bd4cbb60574f4b10ef3, type: 2}
   - m_RefCount: 3
     m_Data: {fileID: 11400000, guid: b2a525b9ca9bd5440acd321417d7648b, type: 2}
@@ -6483,11 +6493,11 @@ Tilemap:
     m_Data: {fileID: 21300000, guid: 450271f1b8651f04f91a4b658861e6b6, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 21300000, guid: c25350ea657f7484db70d1d46925860f, type: 3}
-  - m_RefCount: 105
+  - m_RefCount: 108
     m_Data: {fileID: 21300000, guid: 39bcf89e994dc0e48b4a607d3228b978, type: 3}
   - m_RefCount: 103
     m_Data: {fileID: 21300000, guid: 0bc097107cd51974890a32c1b768dd50, type: 3}
-  - m_RefCount: 6
+  - m_RefCount: 3
     m_Data: {fileID: 21300000, guid: 7c7deca27ac24c94b94432ae44efa230, type: 3}
   - m_RefCount: 3
     m_Data: {fileID: 21300000, guid: c0bedec9af6791242bac6832a436e431, type: 3}

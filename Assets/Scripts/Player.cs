@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player: MonoBehaviour, IKeyMaster
 {
@@ -9,7 +10,7 @@ public class Player: MonoBehaviour, IKeyMaster
     public float speed;
     public float attackDuration = 0.25f; // Number of seconds to attack
     public float attackDelay = 0.5f;     // Delay between attacks
-    public int maxHealth = 10;
+    public int maxHealth = 6;
 
     [Header("Set Dynamically")]
     /*public int dirHeld = -1; // Direction of the held movement key
@@ -29,8 +30,10 @@ public class Player: MonoBehaviour, IKeyMaster
     //3 = left 
     //0  = down
     //1 = right
-    
-    
+
+    public string sceneDie;
+
+
     [SerializeField]
     private int _health;
 
@@ -62,9 +65,9 @@ public class Player: MonoBehaviour, IKeyMaster
         move = move.normalized * speed;
 
         GetComponent<Rigidbody2D>().velocity = move;
-        
-        
-        
+
+        Die();
+
         //get face
         if ((h > 0 || h < 0) && (v < 0 || v > 0))
         {
@@ -189,6 +192,17 @@ public class Player: MonoBehaviour, IKeyMaster
         }
     }
 
+    void OnCollisionEnter2D( Collision2D coll )
+    {
+        //
+        DamageEffect dEf = coll.gameObject.GetComponent<DamageEffect>();
+        if (dEf == null) return; // //
+        health -= dEf.damage; // //
+        //
+        //
+
+        //.....
+    }
     void Flip()
     {
         faceLeft = !faceLeft;
@@ -201,5 +215,13 @@ public class Player: MonoBehaviour, IKeyMaster
     {
         get { return numKeys; }
         set { numKeys = value; }
+    }
+    void Die()
+    {
+        if (health <= 0)
+        {
+            SceneManager.LoadScene(sceneDie);
+            health = maxHealth;
+        }
     }
 }

@@ -21,13 +21,10 @@ public class CameraController : MonoBehaviour {
 	void LateUpdate()
 	{
 		position = new Vector3(player.transform.position.x, player.transform.position.y, transform.position.z);
-		
-		if(maxPos.x != 0 && maxPos.y != 0 && minPos.x != 0 && minPos.y != 0)
-		{
-			//bonding the camera
-			position.x = Mathf.Clamp(position.x, minPos.x, maxPos.x);
-			position.y = Mathf.Clamp(position.y, minPos.y, maxPos.y);
-		}
+
+		//bonding the camera
+		position.x = Mathf.Clamp(position.x, minPos.x, maxPos.x);
+		position.y = Mathf.Clamp(position.y, minPos.y, maxPos.y);
 
 		transform.position = position;
 	}

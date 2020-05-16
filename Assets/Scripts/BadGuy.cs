@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BadGuy : MonoBehaviour
 {
@@ -88,17 +89,11 @@ public class BadGuy : MonoBehaviour
     }
     */
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("Player Collision");
-        if (collision.tag == "Player")
+        if (other.gameObject.CompareTag("Player") && !other.isTrigger)
         {
-            Debug.Log("Collided with the wall");
-            moveLeft = false;
-        }
-        else
-        {
-            Debug.Log("Collid didn't happen");
+            SceneManager.LoadScene("FutureScene");
         }
     }
 }
